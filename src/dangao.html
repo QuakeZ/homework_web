@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>21cake 蛋糕</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+<script src="jquery-3.6.1.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#showAll").click(function(){
+        $("div").show();
+        $("#Mus,#Chok,#Frut,#Cak").attr("style","color:black");
+        $("#showAll").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Mus").click(function(){
+        $(".mus").show();
+        $(".chok, .frut, .cak").hide();
+        $("#showAll,#Chok,#Frut,#Cak").attr("style","color:black");
+        $("#Mus").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Chok").click(function(){
+      $(".chok").show();
+      $(".mus, .frut, .cak").hide();
+      $("#Mus,#showAll,#Frut,#Cak").attr("style","color:black");
+      $("#Chok").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Frut").click(function(){
+        $(".frut").show();
+        $(".chok, .mus, .cak").hide();
+        $("#Mus,#Chok,#showAll,#Cak").attr("style","color:black");
+        $("#Frut").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Cak").click(function(){
+        $(".cak").show();
+        $(".chok, .frut, .mus").hide();
+        $("#Mus,#Chok,#Frut,#showAll").attr("style","color:black");
+        $("#Cak").attr("style","color:rgba(233, 198, 102)");
+    });
+  });
+</script>
+</head>
+
+<body>
+<div class="topnav">
+
+    <div style="float: left;">
+    <a href="index.html"><img src="../img/logo.jpg" style=" margin: -36px -42px;"></a>
+    </div>
+
+    <div style="float: left;">
+    <a href="index.html">首页</a>
+    <a href="pinpai.html">品牌</a>
+    <a href="#">蛋糕</a>
+    <a href="mianbao.html">面包</a>
+    <a href="yinpin.html">饮品</a>
+    <a href="https://mall.jd.com/index-34002.html" target="_blank">商城</a>
+    </div>
+
+    <div style="float: right;">
+    <a href="lianxi.html">联系我们</a>
+    </div>
+</div>
+
+<div class="header">
+    <!--h1>头部区域</h1-->
+    <img src="../img/banner.jpg" style="width:100%;margin: -5px;">
+</div>	
+
+
+<div class="main">
+    <div class="dangao">
+        <dl>
+            <dt style="color:grey">口味:</dt>
+            <dd>
+              <a id="showAll" style="color:rgba(233, 198, 102)">全部</a>
+            </dd>
+            <dd>
+              <a id="Mus">慕斯</a>
+            </dd>
+            <dd>
+              <a id="Chok">巧克力</a>
+            </dd>  
+            <dd>
+              <a id="Frut">水果</a>
+            </dd>
+            <dd>
+              <a id="Cak">人气蛋糕卷</a>
+            </dd>
+        </dl>
+
+        <br>
+  
+        <div class="mus clm">
+            <img src="../img/dangao/musi/baixiangguo.jpg" style="width:70%">
+            <h3>百香果慕斯蛋糕<br>￥198</h3>
+        </div>
+        <div class="mus clm">
+            <img src="../img/dangao/musi/cha.jpg" style="width:70%">
+            <h3>茶香京都<br>￥218</h3>
+        </div>
+        <div class="mus clm">
+            <img src="../img/dangao/musi/huanyou.jpg" style="width:70%">
+            <h3>提拉米苏.心意<br>￥298</h3>
+        </div>
+        <div class="mus clm">
+            <img src="../img/dangao/musi/tila.jpg" style="width:70%">
+            <h3>环游世界<br>￥258</h3>
+        </div>
+
+        <div class="chok clm">
+            <img src="../img/dangao/qiaokeli/heilan.jpg" style="width:70%">
+            <h3>黑森林拿破仑<br>￥148</h3>
+        </div>
+        <div class="chok clm">
+            <img src="../img/dangao/qiaokeli/heisenlin.jpg" style="width:70%">
+            <h3>天使巧克力<br>￥128</h3>
+        </div>
+        <div class="chok clm">
+            <img src="../img/dangao/qiaokeli/keke.jpg" style="width:70%">
+            <h3>巧克力黑兰<br>￥198</h3>
+        </div>
+        <div class="chok clm">
+            <img src="../img/dangao/qiaokeli/tianshi.jpg" style="width:70%">
+            <h3>君度可可<br>￥178</h3>
+        </div>
+
+
+        <div class="frut clm">
+            <img src="../img/dangao/shuiguo/lanmei.jpg" style="width:70%">
+            <h3>云朵芒芒<br>￥306</h3>
+        </div>
+        <div class="frut clm">
+            <img src="../img/dangao/shuiguo/mang.jpg" style="width:70%">
+            <h3>蓝莓轻乳拿破仑<br>￥187</h3>
+        </div>
+        <div class="frut clm">
+            <img src="../img/dangao/shuiguo/mei.jpg" style="width:70%">
+            <h3>拿破仑莓恋<br>￥147</h3>
+        </div>
+        <div class="frut clm">
+            <img src="../img/dangao/shuiguo/ning.jpg" style="width:70%">
+            <h3>Mojito柠<br>￥166</h3>
+        </div>
+
+        <div class="cak clm">
+          <img src="../img/dangao/juanjuan/chun.jpg"style="width:70%">
+          <h3>玫瑰荔枝卷<br>￥88</h3>       
+      </div>
+      <div class="cak clm">
+          <img src="../img/dangao/juanjuan/meigui.jpg" style="width:70%">
+          <h3>春樱莓莓卷<br>￥78</h3>
+      </div>
+      <div class="cak clm">
+          <img src="../img/dangao/juanjuan/yang.jpg" style="width:70%">
+          <h3>杨枝甘露卷<br>￥98</h3>
+      </div>
+
+      <div style="clear: both;"></div>
+    
+
+    </div>
+</div>
+  
+
+
+<div class="footer">
+    <p>邮箱：kefu@21cake.com.cn    |   
+        地址：河北省秦皇岛市经济技术开发区凤城三路33号    |   
+        电话：0335-022-6999
+    </p>
+    <p>
+        Copyright© 21Cake蛋糕官网商城 2007-2022, 版权所有
+        <a href="https://beian.miit.gov.cn" target="_blank">京ICP备14006254号-1</a>
+        <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010682" target="_blank">京公网安备11030102010682号</a>    
+    </p>
+
+</div>
+  
+</body>
+</html>

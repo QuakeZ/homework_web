@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>21cake 面包</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+<script src="jquery-3.6.1.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#showAll").click(function(){
+        $("div").show();
+        $("#Tus,#Kes,#Qita").attr("style","color:black");
+        $("#showAll").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Kes").click(function(){
+        $(".kes").show();
+        $(".tus, .qita").hide();
+        $("#showAll,#Tus,#Qita").attr("style","color:black");
+        $("#Kes").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Tus").click(function(){
+      $(".tus").show();
+      $(".kes, .qita").hide();
+      $("#Kes,#showAll,#Qita").attr("style","color:black");
+      $("#Tus").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Qita").click(function(){
+        $(".qita").show();
+        $(".tus, .kes").hide();
+        $("#Tus,#Kes,#showAll").attr("style","color:black");
+        $("#Qita").attr("style","color:rgba(233, 198, 102)");
+    });
+  });
+</script>
+</head>
+
+<body>
+<div class="topnav">
+
+    <div style="float: left;">
+    <a href="index.html"><img src="../img/logo.jpg" style=" margin: -36px -42px;"></a>
+    </div>
+
+    <div style="float: left;">
+    <a href="index.html">首页</a>
+    <a href="pinpai.html">品牌</a>
+    <a href="dangao.html">蛋糕</a>
+    <a href="#">面包</a>
+    <a href="yinpin.html">饮品</a>
+    <a href="https://mall.jd.com/index-34002.html" target="_blank">商城</a>
+    </div>
+
+    <div style="float: right;">
+    <a href="lianxi.html">联系我们</a>
+    </div>
+</div>
+
+<div class="header">
+    <!--h1>头部区域</h1-->
+    <img src="../img/banner.jpg" style="width:100%;margin: -5px;">
+</div>	
+
+
+<div class="main">
+    <div class="dangao">
+        <dl>
+            <dt style="color:grey">口味:</dt>
+            <dd>
+              <a id="showAll" style="color:rgba(233, 198, 102)">全部</a>
+            </dd>
+            <dd>
+              <a id="Tus">吐司</a>
+            </dd>
+            <dd>
+              <a id="Kes">可颂</a>
+            </dd>  
+            <dd>
+              <a id="Qita">其他</a>
+            </dd>
+        </dl>
+
+        <br>
+
+        <div class="tus clm">
+            <img src="../img/mianbao/tusi/bei.jpg" style="width:70%">
+            <h3>全麦吐司<br>￥19</h3>
+        </div>
+        <div class="tus clm">
+            <img src="../img/mianbao/tusi/pa.jpg" style="width:70%">
+            <h3>巧克力吐司<br>￥21</h3>
+        </div>
+        <div class="tus clm">
+            <img src="../img/mianbao/tusi/qiao.jpg" style="width:70%">
+            <h3>北海道吐司<br>￥19</h3>
+        </div>
+        <div class="tus clm">
+            <img src="../img/mianbao/tusi/quanmai.jpg" style="width:70%">
+            <h3>帕玛森咸吐司<br>￥21</h3>
+        </div>
+       
+        <div class="kes clm">
+            <img src="../img/mianbao/kesong/lanmei.jpg" style="width:70%">
+            <h3>原味可颂（2个）<br>￥24</h3>
+        </div>
+        <div class="kes clm">
+            <img src="../img/mianbao/kesong/qiao.jpg" style="width:70%">
+            <h3>蓝莓可颂<br>￥13.8</h3>
+        </div>
+        <div class="kes clm">
+            <img src="../img/mianbao/kesong/yuanwei.jpg" style="width:70%">
+            <h3>巧克力可颂（榛子巧克力口味）<br>￥16.8</h3>
+        </div>
+        <div class="qita clm">
+            <img src="../img/mianbao/qita/hetao.jpg" style="width:70%">
+            <h3>阳光葡萄卷<br>￥13.8</h3>
+        </div>
+        <div class="qita clm">
+            <img src="../img/mianbao/qita/putao.jpg" style="width:70%">
+            <h3>核桃派<br>￥18.8</h3>
+        </div>
+
+        <div style="clear: both;"></div>
+    
+
+    </div>
+</div>
+  
+
+
+<div class="footer">
+    <p>邮箱：kefu@21cake.com.cn    |   
+        地址：河北省秦皇岛市经济技术开发区凤城三路33号    |   
+        电话：0335-022-6999
+    </p>
+    <p>
+        Copyright© 21Cake蛋糕官网商城 2007-2022, 版权所有
+        <a href="https://beian.miit.gov.cn" target="_blank">京ICP备14006254号-1</a>
+        <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010682" target="_blank">京公网安备11030102010682号</a>    
+    </p>
+
+</div>
+  
+</body>
+</html>

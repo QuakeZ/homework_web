@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>21cake 饮品</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+<script src="jquery-3.6.1.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#showAll").click(function(){
+        $("div").show();
+        $("#Gch,#Nach,#Xup").attr("style","color:black");
+        $("#showAll").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Gch").click(function(){
+        $(".gch").show();
+        $(".nach, .xup").hide();
+        $("#showAll,#Nach,#Xup").attr("style","color:black");
+        $("#Gch").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Nach").click(function(){
+      $(".nach").show();
+      $(".gch, .xup").hide();
+      $("#showAll,#Gch,#Xup").attr("style","color:black");
+      $("#Nach").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Xup").click(function(){
+        $(".xup").show();
+        $(".nach, .gch").hide();
+        $("#showAll,#Nach,#Gch").attr("style","color:black");
+        $("#Xup").attr("style","color:rgba(233, 198, 102)");
+    });
+
+  });
+</script>
+</head>
+
+<body>
+<div class="topnav">
+
+    <div style="float: left;">
+    <a href="index.html"><img src="../img/logo.jpg" style=" margin: -36px -42px;"></a>
+    </div>
+
+    <div style="float: left;">
+    <a href="index.html">首页</a>
+    <a href="pinpai.html">品牌</a>
+    <a href="dangao.html">蛋糕</a>
+    <a href="mianbao.html">面包</a>
+    <a href="#">饮品</a>
+    <a href="https://mall.jd.com/index-34002.html" target="_blank">商城</a>
+    </div>
+
+    <div style="float: right;">
+    <a href="lianxi.html">联系我们</a>
+    </div>
+</div>
+
+<div class="header">
+    <!--h1>头部区域</h1-->
+    <img src="../img/banner1.jpg" style="width:100%;margin: -5px;">
+</div>	
+
+
+<div class="main">
+    <div class="dangao">
+        <dl>
+            <dt style="color:grey">口味:</dt>
+            <dd>
+              <a id="showAll" style="color:rgba(233, 198, 102)">全部</a>
+            </dd>
+            <dd>
+              <a id="Gch">果茶</a>
+            </dd>
+            <dd>
+              <a id="Nach">奶茶</a>
+            </dd>  
+            <dd>
+              <a id="Xup">雪泡</a>
+            </dd>
+        </dl>
+
+        <br>
+  
+        <div class="gch clm3">
+            <img src="../img/yinpin/guocha/cheng.jpg" style="width:70%">
+            <h3>鲜爆奇异果<br>￥28</h3>
+        </div>
+        <div class="gch clm3">
+            <img src="../img/yinpin/guocha/huo.jpg" style="width:70%">
+            <h3>鲜爆金盏橙<br>￥25</h3>
+        </div>
+        <div class="gch clm3">
+            <img src="../img/yinpin/guocha/qiyiguo.jpg" style="width:70%">
+            <h3>鲜爆奇异果凤仙火龙果<br>￥28</h3>
+        </div>
+        <div class="nach clm3">
+            <img src="../img/yinpin/naicha/da.jpg" style="width:70%">
+            <h3>燕麦奶茶<br>￥12</h3>
+        </div>
+        <div class="nach clm3">
+            <img src="../img/yinpin/naicha/hei.jpg" style="width:70%">
+            <h3>大满贯<br>￥18</h3>
+        </div>
+        <div class="nach clm3">
+            <img src="../img/yinpin/naicha/yanmai.jpg" style="width:70%">
+            <h3>黑糖珍珠奶茶<br>￥15</h3>
+        </div>
+
+        <div class="xup clm3">
+            <img src="../img/yinpin/xuepao/putao.jpg" style="width:70%">
+            <h3>葡萄雪泡<br>￥16</h3>
+        </div>
+
+        <div style="clear: both;"></div>
+    
+
+    </div>
+</div>
+  
+
+
+<div class="footer">
+    <p>邮箱：kefu@21cake.com.cn    |   
+        地址：河北省秦皇岛市经济技术开发区凤城三路33号    |   
+        电话：0335-022-6999
+    </p>
+    <p>
+        Copyright© 21Cake蛋糕官网商城 2007-2022, 版权所有
+        <a href="https://beian.miit.gov.cn" target="_blank">京ICP备14006254号-1</a>
+        <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010682" target="_blank">京公网安备11030102010682号</a>    
+    </p>
+
+</div>
+  
+</body>
+</html>

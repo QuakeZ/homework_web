@@ -1,0 +1,39 @@
+dl{margin: 0;
+    padding: 10px;
+    border: 1px solid black;
+}
+li{display:inline-block;}
+dd{display: inline;}
+dt{display: inline;}
+a{text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgba(233, 198, 102);
+}
+a:visited{color: black;
+}
+.clm{
+    float: left;
+    width: 25%;
+    padding: 0;
+    text-align: center;
+}
+
+.prdtclmns {
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+}
+
+.price {
+    list-style-type: none;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    font-weight:bold;
+    
+}

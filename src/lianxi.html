@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>21cake 联系我们</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+<div class="topnav">
+
+    <div style="float: left;">
+    <a href="index.html"><img src="../img/logo.jpg" style=" margin: -36px -42px;"></a>
+    </div>
+
+    <div style="float: left;">
+    <a href="index.html">首页</a>
+    <a href="pinpai.html">品牌</a>
+    <a href="dangao.html">蛋糕</a>
+    <a href="mianbao.html">面包</a>
+    <a href="yinpin.html">饮品</a>
+    <a href="https://mall.jd.com/index-34002.html" target="_blank">商城</a>
+    </div>
+
+    <div style="float: right;">
+    <a href="#">联系我们</a>
+    </div>
+</div>
+
+<div class="header">
+    <!--h1>头部区域</h1-->
+    <img src="../img/banner2.jpg" style="width:100%;margin: -5px;">
+</div>	
+
+
+<div class="main">
+
+    <div class="containerlx">
+        <div style="text-align:center">
+          <h1>联系</h1>
+          <p>Contact</p>
+        </div>
+        <div class="rowlx">
+            <div class="columnlx">
+                <div id="allmap" style="width: 100%;height: 300px;"></div>
+                <!-- 加载地图JSAPI脚本 -->
+                <script src="https://webapi.amap.com/maps?v=2.0&key=662e10c2d7072014748c7b253e4394d5"></script>
+                <script>
+                  var map = new AMap.Map('allmap', {
+                  viewMode: '2D', // 默认使用 2D 模式，如果希望使用带有俯仰角的 3D 模式，请设置 viewMode: '3D',
+                  zoom:14.5, //初始化地图层级
+                  center: [119.548598,39.923731] //初始化地图中心点
+                  });
+                </script>
+            </div>
+  
+            <div class="columnlx" style="font-size: 18px">
+                <p style="font-size: 20px"><b>21Cake食品有限公司</b></p>
+                <div>
+                    <img src="../img/lianxi/icon1.jpg" style="float: left;">
+                    <p>联系热线<br>0335-022-6999</p>
+                </div>
+                <div >
+                    <img src="../img/lianxi/icon2.jpg" style="float: left;">
+                    <p>地址<br>河北省秦皇岛市经济技术开发区凤城三路33号</p>
+                </div>
+                <hr color="black">
+                <p>邮箱：kefu@21cake.com.cn</p>
+            </div>
+        </div>
+    </div>
+    <div style="text-align:center">
+        <h1>留言</h1>
+        <p>Leave a Message</p>
+    </div>
+
+  
+    <form action="/action_page.php">
+        <div class="columnf">        
+            <!--label for="name">姓名</label-->
+            <input type="text" id="fname" name="name" placeholder="姓名">
+        </div>
+
+        <div class="columnf">        
+            <!--label for="phone">电话</label-->
+            <input type="text" id="phone" name="phone" placeholder="电话">
+        </div>
+        
+        <div class="columnf">        
+            <!--label for="mail">邮箱</label-->
+            <input type="text" id="mail" name="mail" placeholder="邮箱">
+        </div>
+
+        <div style="padding: 10px;">        
+            <!--label for="subject">留言</label-->
+            <textarea id="subject" name="subject" placeholder="留言" style="height:170px"></textarea>
+        </div>
+        <div style="display: flex;justify-content: center;align-items: center;">
+            <input type="submit" value="提交">
+        </div>
+        <br>
+        
+
+    </form>
+ 
+
+</div>
+  
+
+
+<div class="footer">
+    <p>邮箱：kefu@21cake.com.cn    |   
+        地址：河北省秦皇岛市经济技术开发区凤城三路33号    |   
+        电话：0335-022-6999
+    </p>
+    <p>
+        Copyright© 21Cake蛋糕官网商城 2007-2022, 版权所有
+        <a href="https://beian.miit.gov.cn" target="_blank">京ICP备14006254号-1</a>
+        <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010682" target="_blank">京公网安备11030102010682号</a>    
+    </p>
+
+</div>
+  
+</body>
+</html>

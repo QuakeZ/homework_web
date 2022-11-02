@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>21cake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="box.css">
+
+<script src="jquery-3.6.1.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#showAll").click(function(){
+        $("div").show();
+        $("a").attr("style","color:black");
+        $("#showAll").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Mus").click(function(){
+        $(".mus").show();
+        $(".chok, .frut, .cak").hide();
+        $("a").attr("style","color:black");
+        $("#Mus").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Chok").click(function(){
+      $(".chok").show();
+      $(".mus, .frut, .cak").hide();
+      $("a").attr("style","color:black");
+      $("#Chok").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Frut").click(function(){
+        $(".frut").show();
+        $(".chok, .mus, .cak").hide();
+        $("a").attr("style","color:black");
+        $("#Frut").attr("style","color:rgba(233, 198, 102)");
+    });
+    $("#Cak").click(function(){
+        $(".cak").show();
+        $(".chok, .frut, .mus").hide();
+        $("a").attr("style","color:black");
+        $("#Cak").attr("style","color:rgba(233, 198, 102)");
+    });
+
+  });
+</script>
+
+</head>
+
+
+<body>
+
+  <dl class="aa">
+    <dt style="color:grey">口味:</dt>
+    <dd>
+      <a id="showAll" style="color:rgba(233, 198, 102)">全部</a>
+    </dd>
+    <dd>
+      <a id="Mus">慕斯</a>
+    </dd>
+    <dd>
+      <a id="Chok">巧克力</a>
+    </dd>  
+    <dd>
+      <a id="Frut">水果</a>
+    </dd>
+    <dd>
+      <a id="Cak">人气蛋糕卷</a>
+    </dd>
+
+  </dl>
+
+      <br>
+  
+        <div class="mus clm">
+            <img src="../img/dangao/musi/baixiangguo.jpg" style="width:70%">
+            <h3>1</h3>
+        </div>
+        
+ 
+
+        <div class="mus clm">
+            <img src="../img/dangao/musi/cha.jpg" style="width:70%">
+            <h3>2</h3>
+        </div>
+
+
+        <div class="mus clm">
+            <img src="../img/dangao/musi/huanyou.jpg" style="width:70%">
+            <h3>3</h3>
+        </div>
+
+
+        <div class="mus clm">
+            <img src="../img/dangao/musi/tila.jpg" style="width:70%">
+            <h3>4</h3>
+        </div>
+
+
+
+        <div class="chok clm">
+            <img src="../img/dangao/qiaokeli/heilan.jpg" style="width:70%">
+            <h3>5</h3>
+        </div>
+
+
+        <div class="chok clm">
+            <img src="../img/dangao/qiaokeli/heisenlin.jpg" style="width:70%">
+            <h3>6</h3>
+        </div>
+
+
+        <div class="chok clm">
+            <img src="../img/dangao/qiaokeli/keke.jpg" style="width:70%">
+            <h3>7</h3>
+        </div>
+
+
+        <div class="chok clm">
+            <img src="../img/dangao/qiaokeli/tianshi.jpg" style="width:70%">
+            <h3>8</h3>
+        </div>
+
+
+
+        <div class="frut clm">
+            <img src="../img/dangao/shuiguo/lanmei.jpg" style="width:70%">
+            <h3>9</h3>
+        </div>
+
+        <div class="cak clm">
+          <img src="../img/dangao/juanjuan/chun.jpg"style="width:70%">
+          <h3>百香果慕斯蛋糕<br>￥198</h3>
+          
+      </div>
+
+
+      <div class="cak clm">
+          <img src="../img/dangao/juanjuan/meigui.jpg" style="width:70%">
+          <h3>百香果慕斯蛋糕<br>￥198</h3>
+      </div>
+
+
+      <div class="cak clm">
+          <img src="../img/dangao/juanjuan/yang.jpg" style="width:70%">
+          <h3>百香果慕斯蛋糕<br>￥198</h3>
+      </div>
+ 
+
+
+
+
+    
+   
+  
+</body>
+</html>
